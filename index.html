@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            Lab 1
+        </title> 
+		<style>
+			  body {
+				background: blue;
+				font-family: Tahoma;
+				color: red;
+			  }
+		</style>
+    </head>
+    <body>
+        <table style="border-collapse: collapse;">
+			  <tr>
+				<td colspan="2" style="border: 3px solid black;">
+					<img src="img.jpg" style="border: 2px solid black; float: right; margin: 10px;" usemap="#image-map" >
+					<map name="image-map">
+						<area target="_self" alt="Електроніка М-332С" title="Електроніка М-332С" href="#Електроніка М-332С" coords="453,203,267,81" shape="rect">
+						<area target="_self" alt="Atari 1050" title="Atari 1050" href="#Atari 1050" coords="96,16,64,140,60,167,74,199,94,198,246,195,246,146,244,15" shape="poly">
+						<area target="_self" alt="Atari 800XL" title="Atari 800XL" href="#Atari 800XL" coords="53,217,17,404,28,421,477,420,489,402,445,214" shape="poly">
+					</map>
+				</td>
+			  </tr>
+			  <tr>
+				<td style="border: 3px solid black; width: 45%;">
+					<ul>
+					  <li>Улюблені пісні:
+						<ul>
+						  <li>Miracle Of Sound - VALHALLA CALLING ft. Peyton Parrish</li>
+						  <li>Brutto - Underdog</li>
+						  <li>Eazy-E - Real Muthaphuckkin G's </li>
+						</ul>
+					  </li>
+					  <li>Улюблені комп'ютерні ігри:
+						<ol>
+						  <li>Gothic 1</li>
+						  <li>The Binding of Isaac</li>
+						  <li>Hades</li>
+						</ol>
+					  </li>
+					</ul>
+				</td>
+				<td style="border: 3px solid black; width: 55%;">
+					<div id = "Електроніка М-332С"
+						<p>
+						Малогабаритний касетний магнітофон 3-го класу "Електроніка М-332С" може бути використаний як для запису, 
+						так і для прослуховування музично-мовних програм, записаних на стандартних касетах МК-60 або МК-90.
+						Магнітофон випускали в одне і двошвидкісному варіантах, один з яких входив в комплект кенгуру "Електроніка М-334С". 
+						Апарат міг відтворювати магнітні касети через стерео навушники (поставлялися в комплекті) або вбудований монофонічний 
+						динамік і записувати звук з вбудованого стерео-мікрофона або лінійного входу.
+						</p>
+					</div>
+					<div id="Atari 1050">
+						<p>
+						ATARI 1050 - перший дисковод полуторної щільності запису (після встановлення ICD Doubler - подвійної щільності), 
+						випущений фірмою Atari замість Atari 810. Новий Atari 1050 відповідав часу, високим технологіям і ідеально підходив 
+						для лінійки домашніх комп'ютерів серії XL. Оригінальний Atari 810 міг записувати дані з одинарною щільністю, використовуючи 
+						88 зі 100 КБ на дискеті. Новий дисковод міг використовувати дискети, записані на Atari 810, а також записувати дані з розширеною
+						щільністю, вміщуючи на дискеті 127 КБ (хоча стандарт для дисководів давав змогу записати 180 КБ на один бік).
+						</p>
+					</div>
+					
+					<div id="Atari 800XL">
+						<p>
+						Клавіатура Atari 800XL відповідала розкладці QWERTY (всього було 62 клавіші, включно з такими зручностями, як "Control", 
+						"Shift", "TAB", "Escape"). Система забезпечувалася вбудованою діагностичною програмою і клавішею "Help". Однак, програмовані 
+						функціональні клавіші були відсутні. Atari 800XL містив також вбудований Atari BASIC, який під час завантаження системи міг 
+						бути блокований клавішею "Option".
+						</p>
+					</div>
+				</td>
+			  </tr>
+		</table>
+		
+				
+		<form action="#" method="post" style="background-size: cover; width: 500px; height: 400px; padding: 50px;">
+		    <h2 style="color: #ffffff; font-size: 20px; margin-bottom: 30px;">Надайте, будь-ласка інформацію про себе</h2>
+		    <label for="name" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">Ім'я*:</label>
+		    <input type="text" id="name" name="name" style="padding: 10px; border-radius: 5px; border: none; margin-bottom: 20px; ">
+		    <br>
+		    <label for="email" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">Email*:</label>
+		    <input type="text" id="email" name="email" style="padding: 10px; border-radius: 5px; border: none; margin-bottom: 20px; display: inline-block;">
+		    <br>
+		    <label for="city" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">Місто*:</label>
+		    <select id="city" style="font-size: 18px;">
+				<option>Львів</option>
+				<option>Рівне</option>
+				<option>Київ</option>
+				<option>Луцьк</option>
+				<option>Тернопіль</option>
+            </select>
+		    <h2 style="color: #ffffff; font-size: 19px;">Робочі дні</h2>
+		     <small style="color: #ff0000">Відмітьте дні і виберіть робочі години<br>
+            (сума робочих годин повинна бути не більшою 40 год/тиждень)</small><br>
+			
+			<input type="checkbox">
+			<label for="day" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">Понеділок:</label>
+			<label style="color: #ffffff; font-size: 18px;">З</label> <input type="time">
+            <label style="color: #ffffff; font-size: 18px;">По</label> <input type="time"><br>
+			<input type="checkbox">
+			<label for="day" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">Вівторок:</label>
+			<label style="color: #ffffff; font-size: 18px;">З</label> <input type="time">
+            <label style="color: #ffffff; font-size: 18px;">По</label> <input type="time"><br>
+			<input type="checkbox">
+			<label for="day" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">Середа:</label>
+			<label style="color: #ffffff; font-size: 18px;">З</label> <input type="time">
+            <label style="color: #ffffff; font-size: 18px;">По</label> <input type="time"><br>
+			<input type="checkbox">
+			<label for="day" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">Четвер:</label>
+			<label style="color: #ffffff; font-size: 18px;">З</label> <input type="time">
+            <label style="color: #ffffff; font-size: 18px;">По</label> <input type="time"><br>
+			<input type="checkbox">
+			<label for="day" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">П'ятниця:</label>
+			<label style="color: #ffffff; font-size: 18px;">З</label> <input type="time">
+            <label style="color: #ffffff; font-size: 18px;">По</label> <input type="time"><br>
+			<input type="checkbox">
+			<label for="day" style="color: #ffffff; font-size: 18px; display: inline-block; margin-bottom: 10px;">Субота:</label>
+			<label style="color: #ffffff; font-size: 18px;">З</label> <input type="time">
+            <label style="color: #ffffff; font-size: 18px;">По</label> <input type="time"><br>
+			
+			<input type="submit" value="Відправити" style="background-color: #ffffff; color: #333333; font-size: 18px;">
+		</form>
+
+		
+    </body>
+</html>   
